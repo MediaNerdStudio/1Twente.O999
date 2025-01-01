@@ -1,0 +1,18 @@
+{
+  "animation": {
+    "offsets": {
+      "clips_overlay": {
+        "start": 10000,
+        "end": 20000
+      },
+      "clips_horizontal": {
+        "start": 4000,
+        "end": 10000
+      },
+      "clips_vertical": {
+        "start": 4000,
+        "end": 10000
+      }
+    }
+  }
+}

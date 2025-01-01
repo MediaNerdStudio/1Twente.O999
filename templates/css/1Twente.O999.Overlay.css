@@ -1,0 +1,609 @@
+.rowTimeDateEPG {
+  position: absolute;
+  display: flex;
+  left: 96px;
+  bottom: 48px;
+  /* background-color: rebeccapurple; */
+}
+
+.rowTimeDateEPG .dateEPG h1,
+.rowTimeDateEPG .dateEPG h2 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: "DIN 2014 Demi";
+  font-size: 34px;
+  display: inline-block;
+  line-height: 62px;
+  color: var(--st-1t-color01);
+}
+
+.rowTimeDateEPG .dateEPG h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.rowTimeDateEPG .dateEPG h2 {
+  text-transform: uppercase;
+  font-family: "DIN 2014";
+  font-weight: bold;
+}
+
+.rowTimeDateEPG .clock {
+  position: relative;
+  height: 62px;
+  border-radius: 5px;
+  background-color: var(--st-1t-color01);
+  color: var(--st-1t-color02);
+  text-align: center;
+  font-family: "DIN 2014 Demi";
+  font-weight: 600;
+  line-height: 62px;
+  font-size: 34px;
+  padding: 0 16px;
+}
+
+.rowTimeDateEPG .dateEPG {
+  position: relative;
+  height: 62px;
+  border-radius: 5px;
+  margin-left: 16px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rowTimeDateEPG .dateEPG .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 62px;
+  width: 420px;
+  background-color: var(--st-1t-color02);
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.rowTimeDateEPG .dateEPG .date h2 {
+  margin-right: 6px;
+}
+
+.rowTimeDateEPG .dateEPG .EPG h2 {
+  margin-left: 6px;
+}
+
+.rowTimeDateEPG .dateEPG .date .content,
+.rowTimeDateEPG .dateEPG .EPG .content {
+  display: inline-block;
+  z-index: 99;
+}
+
+.rowTimeDateEPG .dateEPG .date,
+.rowTimeDateEPG .dateEPG .EPG {
+  /* position: absolute;
+  display: flex; */
+  display: inline-block;
+  z-index: 99;
+}
+
+.d-none {
+  display: none;
+}
+
+.rowNPCarousel {
+  position: absolute;
+  display: flex;
+  left: 96px;
+  bottom: 126px;
+  width: 1728px;
+}
+
+.rowNPCarousel .nowplaying {
+  position: relative;
+  display: flex;
+  margin-right: 22px;
+}
+
+.rowNPCarousel .carousel {
+  border-radius: 10px;
+  /* background-color: var(--st-1t-color02); */
+  color: var(--st-1t-color01);
+  font-family: "DIN 2014";
+  font-weight: bold;
+  flex-grow: 1;
+  min-width: 0;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.rowNPCarousel .nowplaying .info {
+  border-radius: 10px;
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  padding-left: 204px;
+  min-width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.rowNPCarousel .nowplaying .position {
+  width: 0px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rowNPCarousel .nowplaying .position .content {
+  position: absolute;
+  width: 100px;
+  left: 24px;
+  top: 16px;
+  border: var(--st-1t-color02) 3px solid;
+  border-radius: 10px;
+  line-height: 60px;
+  text-align: center;
+  font-family: "DIN 2014 Narrow Demi";
+  font-weight: 600;
+  color: var(--st-1t-color02);
+  font-size: 40px;
+}
+
+/* NOWPLAYING INFO */
+.rowNPCarousel .nowplaying .info .artist,
+.rowNPCarousel .nowplaying .info .title,
+.rowNPCarousel .nowplaying .info .pill {
+  margin-left: 22px;
+  display: flex;
+}
+
+.rowNPCarousel .nowplaying .info .artist,
+.rowNPCarousel .nowplaying .info .title {
+  height: 50px;
+}
+
+.rowNPCarousel .nowplaying .info .artist .text,
+.rowNPCarousel .nowplaying .info .title .text {
+  line-height: 50px;
+  font-size: 32px;
+  color: var(--st-1t-color02);
+  text-transform: uppercase;
+  margin-right: 22px;
+  white-space: nowrap;
+}
+
+.rowNPCarousel .nowplaying .info .artist .text {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+}
+
+.rowNPCarousel .nowplaying .info .title .text {
+  font-family: "DIN 2014 Narrow";
+  font-weight: 300;
+}
+
+.rowNPCarousel .nowplaying .info .artist .icon,
+.rowNPCarousel .nowplaying .info .title .icon {
+  margin: 12px 12px 0 7px;
+}
+
+/* NOWPLAYING PILL */
+.rowNPCarousel .nowplaying .info .pill {
+  position: absolute;
+  top: -30px;
+  background-color: var(--st-1t-color02);
+  border-radius: 22px;
+  padding: 8px 22px;
+}
+
+.rowNPCarousel .nowplaying .info .pill .icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+}
+
+.rowNPCarousel .nowplaying .info .pill .icon img {
+  height: 20px;
+  margin: 4px;
+}
+
+.rowNPCarousel .nowplaying .info .pill .text {
+  line-height: 28px;
+  color: var(--st-1t-color01);
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* NOWPLAYING ALBUMART */
+.rowNPCarousel .nowplaying .albumart {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+}
+
+.rowNPCarousel .nowplaying .albumart .art {
+  width: 182px;
+  height: 182px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rowNPCarousel .nowplaying .albumart .art img {
+  width: 182px;
+  height: 182px;
+}
+
+/* === CAROUSEL ITEMS ===================== */
+.carousel .content {
+  position: relative;
+  width: 100%;
+}
+
+.carousel .item {
+  display: flex;
+  border-radius: 10px;
+  height: 140px;
+  min-width: 0;
+  margin-bottom: 10px;
+}
+.carousel .item .body h1,
+.carousel .item .body h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.carousel .item .body {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.carousel .item .header {
+  height: 140px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.carousel .item .header .icon {
+  margin-bottom: 10px;
+}
+
+.carousel .item .header .title {
+  line-height: 22px;
+  font-size: 14px;
+  font-family: "DIN 2014";
+  font-weight: bold;
+  border-radius: 22px;
+  padding: 0 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.carousel .item .body {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel .item .qr img {
+  margin: 8px;
+}
+
+/* ITEM INBOX */
+.carousel .item.inbox {
+  background-color: var(--st-1t-color03);
+}
+
+.carousel .item.inbox .body h1,
+.carousel .item.inbox .body h2 {
+  line-height: 36px;
+  font-size: 28px;
+  color: var(--st-1t-color05);
+  margin-right: 22px;
+}
+
+.carousel .item.inbox .body h1 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.carousel .item.inbox .body h2 {
+  font-family: "DIN 2014 Narrow Demi";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.carousel .item.inbox .header .title {
+  background-color: var(--st-1t-color04);
+  color: var(--st-1t-color02);
+}
+
+/* ITEM NEWS */
+.carousel .item.news {
+  background-color: var(--st-1t-color02);
+  padding-right: 22px;
+}
+
+.carousel .item.news .body h1,
+.carousel .item.news .body h2 {
+  font-size: 26px;
+  color: var(--st-1t-color06);
+}
+
+.carousel .item.news .body h1 {
+  font-family: "DIN 2014";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.carousel .item.news .body h2 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.carousel .item.news .header .title {
+  background-color: var(--st-1t-color01);
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.news .image {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 170px;
+  height: 108px;
+  /* background-image: url("../img/newsImageTest.webp"); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+/* ITEM STATS */
+.carousel .item.stats {
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .item.stats .body h1,
+.carousel .item.stats .body h2 {
+  line-height: 36px;
+  font-size: 28px;
+  color: var(--st-1t-color05);
+  margin-right: 22px;
+}
+
+.carousel .item.stats .body h1 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.stats .body h2 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--st-1t-color08);
+}
+
+.carousel .item.stats .header .title {
+  background-color: var(--st-1t-color07);
+  color: var(--st-1t-color02);
+}
+
+/* ITEM VOTERINFO */
+.carousel .item.voterinfo {
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .item.voterinfo .body h1,
+.carousel .item.voterinfo .body h2 {
+  line-height: 36px;
+  font-size: 28px;
+  color: var(--st-1t-color05);
+  margin-right: 22px;
+}
+
+.carousel .item.voterinfo .body h1 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.voterinfo .body h2 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--st-1t-color08);
+}
+
+.carousel .item.voterinfo .header .title {
+  background-color: var(--st-1t-color07);
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.voterinfo .header .icon {
+  margin-bottom: 4px;
+}
+
+/* ITEM TRACKINFO */
+.carousel .item.trackinfo {
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .item.trackinfo .body h1,
+.carousel .item.trackinfo .body h2 {
+  line-height: 36px;
+  font-size: 28px;
+  color: var(--st-1t-color05);
+  margin-right: 22px;
+}
+
+.carousel .item.trackinfo .body h1 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.trackinfo .body h1::before {
+  content: url("../img/1T.Icon.Title.svg");
+  position: relative;
+  margin-right: 10px;
+  top: 4px;
+}
+
+.carousel .item.trackinfo .body h2 {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.trackinfo .header .title {
+  background-color: var(--st-1t-color07);
+  color: var(--st-1t-color02);
+}
+
+/* ITEM TRACKINFO */
+.carousel .item.upcoming {
+  background-image: url("../img/1Twente.BG.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.carousel .item.upcoming .body h1,
+.carousel .item.upcoming .body h2 {
+  line-height: 36px;
+  font-size: 32px;
+  color: var(--st-1t-color02);
+  text-transform: uppercase;
+}
+
+.carousel .item.upcoming .body {
+  overflow: hidden !important;
+  position: relative;
+}
+
+.carousel .item.upcoming .body h1 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: bold;
+  margin-right: 14px;
+}
+
+.carousel .item.upcoming .body h2 {
+  font-family: "DIN 2014 Narrow";
+  font-weight: normal;
+}
+
+.carousel .item.upcoming .header .title {
+  background-color: var(--st-1t-color07);
+  color: var(--st-1t-color02);
+}
+
+.carousel .item.upcoming .body .songs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+.carousel .item.upcoming .body .songs .singleSong {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 4.5px;
+}
+
+.carousel .item.upcoming .body .songs .singleSong .position {
+  width: 55px;
+  height: 30px;
+  border: 2.5px var(--st-1t-color02) solid;
+  border-radius: 5px;
+  font-family: "DIN 2014 Narrow Demi";
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--st-1t-color02);
+  line-height: 30px;
+  text-align: center;
+  margin-right: 16px;
+}
+
+.carousel .item.upcoming .body .songs .singleSong .mark {
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.carousel .item.upcoming .body .songs .singleSong .mark img {
+  margin-top: 6px;
+}
+
+.carousel .item.upcoming .body .highlight {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 44px;
+  width: 1920px;
+  border-radius: 22px;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(232, 65, 39, 1) 0%,
+    rgba(232, 65, 39, 0) 20%,
+    rgba(232, 65, 39, 0) 80%,
+    rgba(232, 65, 39, 1) 100%
+  );
+}
+
+.canvas.vertical {
+  width: 1080px;
+  height: 1920px;
+  /* background-image: url("../img/1T.O999.Screen.V.01.png"); */
+}
+
+.canvas.vertical .rowNPCarousel .carousel,
+.canvas.video .rowNPCarousel .carousel,
+.canvas.video .rowTimeDateEPG {
+  display: none;
+}
+
+.canvas.video .rowNPCarousel {
+  bottom: 50px;
+  left: 50px;
+}

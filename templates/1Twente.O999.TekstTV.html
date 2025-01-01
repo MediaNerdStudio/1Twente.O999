@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1Twente O999 - Visual Radio</title>
+    <link rel="stylesheet" href="./css/1Twente.O999.Fonts.css" />
+    <link rel="stylesheet" href="./css/1Twente.O999.Global.css" />
+    <link rel="stylesheet" href="./css/1Twente.O999.TekstTV.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/font-awesome-pro/6.6.0/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="bg" data-type="news">
+        <div class="texture"></div>
+      </div>
+      <div class="news">
+        <div class="header">
+          <div class="pill">
+            <h1>Nieuws</h1>
+            <h2>van 1Twente.nl</h2>
+          </div>
+        </div>
+        <div class="items"></div>
+      </div>
+      <div class="nowplaying">
+        <div class="pill">
+          <h1>NowPlaying</h1>
+        </div>
+        <div class="current"></div>
+        <div class="previous">
+          <h1 class="header">
+            <img src="./img/1T.Icon.CD.svg" />Eerder gehoord
+          </h1>
+          <div class="songs"></div>
+        </div>
+      </div>
+      <div class="epg now">
+        <div class="bg_presenter">
+          <div class="image"></div>
+        </div>
+        <div class="pill">
+          <h1>gids</h1>
+        </div>
+        <div class="details">
+          <div class="time">
+            <div class="start">On-Air</div>
+            <h3></h3>
+          </div>
+          <h1></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div class="epg next">
+        <div class="bg_presenter">
+          <div class="image"></div>
+        </div>
+        <div class="pill">
+          <h1>gids</h1>
+        </div>
+        <div class="details">
+          <div class="time">
+            <div class="start">Straks</div>
+            <h3></h3>
+          </div>
+          <h1></h1>
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/gsap/gsap.min.js"></script>
+    <script src="./plugins/moment/moment-with-locales.js"></script>
+    <script src="./plugins/moment-timezone/moment-timezone-with-data.js"></script>
+    <script src="./plugins/socket.io-client/socket.io.min.js"></script>
+    <script src="./plugins/timexe/timexe.js"></script>
+
+    <script src="./js/1Twente.O999.VisualRadio.Components.js"></script>
+    <script src="./js/1Twente.O999.TekstTV.js"></script>
+  </body>
+</html>
